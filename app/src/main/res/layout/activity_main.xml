@@ -23,6 +23,7 @@
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
         android:onClick="abrirGaleria"
         android:text="Galería"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -34,7 +35,8 @@
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_margin="5dp"
-        android:onClick="abrirCamara"
+        android:layout_marginTop="5dp"
+        android:onClick="camara"
         android:text="Cámara"
         app:layout_constraintLeft_toRightOf="@+id/btGallery"
         app:layout_constraintRight_toRightOf="parent"
@@ -42,46 +44,42 @@
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:layout_margin="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtresults"
+        android:layout_marginStart="378dp"
+        android:layout_marginEnd="377dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btGallery"
-        app:srcCompat="@drawable/frase"
-        tools:layout_editor_absoluteX="10dp" />
+        app:srcCompat="@drawable/ic_scaner" />
 
     <TextView
         android:id="@+id/txtresults"
-        android:layout_width="200dp"
+        android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_margin="10dp"
-        android:inputType="textMultiLine"
+        android:layout_marginStart="202dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="201dp"
         android:scrollbars="vertical"
         android:text="Resultados:"
-        app:layout_constraintBottom_toTopOf="@id/btText"
-        tools:layout_editor_absoluteX="10dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view" />
 
     <Button
         android:id="@+id/btText"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_margin="10dp"
-        android:layout_marginBottom="8dp"
-        android:onClick="OCRfx"
-        android:text="OCR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/btFace" />
-
-    <Button
-        android:id="@+id/btFace"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_margin="10dp"
-        android:onClick="Rostrosfx"
-        android:text="Rostros"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/btText"
-        app:layout_constraintRight_toRightOf="parent" />
+        android:layout_marginStart="314dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="313dp"
+        android:onClick="scaner"
+        android:text="ESCANEAR CODIGO QR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtresults" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

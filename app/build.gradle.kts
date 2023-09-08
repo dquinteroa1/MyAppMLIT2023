@@ -38,6 +38,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation ("com.google.mlkit:face-detection:16.1.5")
     implementation ("com.google.android.gms:play-services-mlkit-text-recognition:18.0.2")
+    implementation ("com.google.mlkit:barcode-scanning:16.0.3")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
